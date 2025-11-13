@@ -34,9 +34,3 @@ Now let's practice creating your own weather functions!
 # Create a function called 'show_season' that prints what season it is and typical weather
 
 # Call your show_season function
-
-# Create a function called 'weather_advice' that prints advice based on current conditions
-
-# Call your weather_advice function
-
-# Now call all your functions one after another to create a complete weather report!

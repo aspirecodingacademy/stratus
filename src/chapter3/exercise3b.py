@@ -1,61 +1,38 @@
 """
-Now let's practice functions with parameters and return values!
+Now let's learn about functions with parameters!
 
-Parameters are like ingredients in a recipe - you can change them to get different results.
-Return values are like the finished dish - the function gives you back something useful.
+Parameters let you pass information into functions, making them flexible and reusable.
+Think of parameters like ingredients in a recipe - you can change them to get different results.
 
-The examples below show functions that take inputs and give back outputs.
+The example below shows how to use parameters in functions.
 """
 
 
-def create_weather_message(city):
-    message = "Weather report for " + city + " is coming up!"
-    return message
+def show_weather(city):
+    print("Today's weather in", city, "is beautiful!")
 
 
-# Call the function and store the result
-report = create_weather_message("Austin")
-print(report)
-
-
-def convert_to_celsius(fahrenheit):
-    celsius = (fahrenheit - 32) * 5 / 9
-    return celsius
-
-
-# Call the function and use the result
-temp_celsius = convert_to_celsius(75)
-print("75°F equals", temp_celsius, "°C")
+# Call the function with different cities
+show_weather("Houston")
+show_weather("Austin")
 
 """
-Notice how parameters make functions flexible - the same function can work with
-different inputs. Return values let you get results back to use in other places.
+Notice how we can call the same function with different values? The parameter 'city'
+acts like a variable inside the function, taking on whatever value we pass in.
 
-Time to practice with your own weather parameter functions!
+Now let's practice creating functions with parameters!
 """
 
+# Create a function called 'show_temperature' that takes a parameter called 'temp' and prints it
 
-# Create a function called 'weather_greeting' that takes a weather condition parameter
-# and returns a greeting message about that weather
+# Call your function with the temperature 75
 
-# Test your function with "sunny" and print the result
+# Create a function called 'show_city_weather' that takes two parameters: 'city' and 'condition'
+# and prints a message like "Houston is sunny today"
 
-# Create a function called 'calculate_wind_chill' that takes temperature and wind speed
-# and returns a simple wind chill estimate (temp - wind_speed for simplicity)
+# Call your function with "Dallas" and "cloudy"
 
-# Test your function with temperature 30 and wind speed 15
+# Create a function called 'show_forecast' that takes three parameters: 'city', 'high', and 'low'
+# and prints a message like "Austin: High of 85, Low of 68"
 
-# Create a function called 'create_forecast' that takes city, temperature, and condition
-# and returns a complete weather forecast sentence
-
-# Test your function with your local weather information
-
-# Create a function called 'convert_to_fahrenheit' that takes celsius and returns fahrenheit
-# Formula: (celsius * 9/5) + 32
-
-# Test it by converting 25 degrees Celsius to Fahrenheit
-
-# Create a function called 'calculate_rainfall_average' that takes two rainfall amounts
-# and returns the average rainfall
-
-# Test it with rainfall amounts like 2.5 and 1.8 inches
+# Call your function with your city and some temperatures

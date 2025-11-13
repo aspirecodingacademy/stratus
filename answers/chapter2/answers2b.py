@@ -28,27 +28,3 @@ print(wind_mph + rainfall_inches)  # sum
 print(wind_mph - rainfall_inches)  # difference
 print(wind_mph * rainfall_inches)  # product
 print(wind_mph / rainfall_inches)  # division
-
-"""
-Now let's work with floats
-"""
-
-# Create a float variable for expected rainfall in inches (like 1.2 or 0.5)
-rainfall = 1.2
-
-# Create a float variable for wind speed in mph (like 8.7)
-wind_speed = 8.7
-
-# Print both of your float variables
-print(rainfall)
-print(wind_speed)
-
-# Do some math: calculate what the wind speed would be if it doubled
-doubled_wind = wind_speed * 2
-print(doubled_wind)
-
-# Convert a temperature: if it's 20 degrees Celsius, what is it in Fahrenheit?
-# Formula: (Celsius * 9/5) + 32
-celsius = 20
-fahrenheit = (celsius * 9 / 5) + 32
-print(fahrenheit)

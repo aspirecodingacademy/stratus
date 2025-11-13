@@ -48,19 +48,3 @@ def show_season():
 
 # Call your show_season function
 show_season()
-
-
-# Create a function called 'weather_advice' that prints advice based on current conditions
-def weather_advice():
-    print("It's sunny today, so don't forget sunscreen and sunglasses!")
-
-
-# Call your weather_advice function
-weather_advice()
-
-# Now call all your functions one after another to create a complete weather report!
-print("Here's your complete weather report:")
-show_temperature()
-show_forecast()
-show_season()
-weather_advice()

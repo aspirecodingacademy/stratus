@@ -1,98 +1,53 @@
 """
-Now let's practice functions with parameters and return values!
+Now let's learn about functions with parameters!
 
-Parameters are like ingredients in a recipe - you can change them to get different results.
-Return values are like the finished dish - the function gives you back something useful.
+Parameters let you pass information into functions, making them flexible and reusable.
+Think of parameters like ingredients in a recipe - you can change them to get different results.
 
-The examples below show functions that take inputs and give back outputs.
+The example below shows how to use parameters in functions.
 """
 
 
-def create_weather_message(city):
-    message = "Weather report for " + city + " is coming up!"
-    return message
+def show_weather(city):
+    print("Today's weather in", city, "is beautiful!")
 
 
-# Call the function and store the result
-report = create_weather_message("Austin")
-print(report)
-
-
-def convert_to_celsius(fahrenheit):
-    celsius = (fahrenheit - 32) * 5 / 9
-    return celsius
-
-
-# Call the function and use the result
-temp_celsius = convert_to_celsius(75)
-print("75°F equals", temp_celsius, "°C")
+# Call the function with different cities
+show_weather("Houston")
+show_weather("Austin")
 
 """
-Notice how parameters make functions flexible - the same function can work with
-different inputs. Return values let you get results back to use in other places.
+Notice how we can call the same function with different values? The parameter 'city'
+acts like a variable inside the function, taking on whatever value we pass in.
 
-Time to practice with your own weather parameter functions!
+Now let's practice creating functions with parameters!
 """
 
 
-# Create a function called 'weather_greeting' that takes a weather condition parameter
-# and returns a greeting message about that weather
-def weather_greeting(condition):
-    return "Good morning! It's " + condition + " today. Have a great day!"
+# Create a function called 'show_temperature' that takes a parameter called 'temp' and prints it
+def show_temperature(temp):
+    print("The temperature is", temp, "degrees")
 
 
-# Test your function with "sunny" and print the result
-greeting = weather_greeting("sunny")
-print(greeting)
+# Call your function with the temperature 75
+show_temperature(75)
 
 
-# Create a function called 'calculate_wind_chill' that takes temperature and wind speed
-# and returns a simple wind chill estimate (temp - wind_speed for simplicity)
-def calculate_wind_chill(temperature, wind_speed):
-    return temperature - wind_speed
+# Create a function called 'show_city_weather' that takes two parameters: 'city' and 'condition'
+# and prints a message like "Houston is sunny today"
+def show_city_weather(city, condition):
+    print(city, "is", condition, "today")
 
 
-# Test your function with temperature 30 and wind speed 15
-wind_chill = calculate_wind_chill(30, 15)
-print("With 30°F and 15mph wind, it feels like", wind_chill, "degrees")
+# Call your function with "Dallas" and "cloudy"
+show_city_weather("Dallas", "cloudy")
 
 
-# Create a function called 'create_forecast' that takes city, temperature, and condition
-# and returns a complete weather forecast sentence
-def create_forecast(city, temperature, condition):
-    return (
-        "Today in "
-        + city
-        + ", it will be "
-        + condition
-        + " with a high of "
-        + str(temperature)
-        + " degrees."
-    )
+# Create a function called 'show_forecast' that takes three parameters: 'city', 'high', and 'low'
+# and prints a message like "Austin: High of 85, Low of 68"
+def show_forecast(city, high, low):
+    print(city + ": High of", high, ", Low of", low)
 
 
-# Test your function with your local weather information
-forecast = create_forecast("Dallas", 82, "partly cloudy")
-print(forecast)
-
-
-# Create a function called 'convert_to_fahrenheit' that takes celsius and returns fahrenheit
-# Formula: (celsius * 9/5) + 32
-def convert_to_fahrenheit(celsius):
-    return (celsius * 9 / 5) + 32
-
-
-# Test it by converting 25 degrees Celsius to Fahrenheit
-fahrenheit = convert_to_fahrenheit(25)
-print("25°C equals", fahrenheit, "°F")
-
-
-# Create a function called 'calculate_rainfall_average' that takes two rainfall amounts
-# and returns the average rainfall
-def calculate_rainfall_average(rainfall1, rainfall2):
-    return (rainfall1 + rainfall2) / 2
-
-
-# Test it with rainfall amounts like 2.5 and 1.8 inches
-average_rainfall = calculate_rainfall_average(2.5, 1.8)
-print("Average rainfall is", average_rainfall, "inches")
+# Call your function with your city and some temperatures
+show_forecast("Houston", 85, 68)
